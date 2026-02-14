@@ -129,7 +129,7 @@ int main() {
     style.ScaleAllSizes(main_scale);
 
     auto &io = ImGui::GetIO();
-    io.FontGlobalScale = main_scale * 1.3f;
+    io.FontGlobalScale = main_scale;
 
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init();
