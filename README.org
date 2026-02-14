@@ -1,0 +1,35 @@
+#+TITLE: ImGui Classic
+
+* Description
+Starting point code for my upcoming ImGui tutorial.
+
+Single-viewport ImGui application with the classic approach: one native window,
+floating ImGui panels inside, default font. Used to contrast with the multi-window
+approach shown in the tutorial.
+
+* Dependencies
+- CMake 3.18+
+- C++23 compiler
+
+** Linux (Debian/Ubuntu)
+#+BEGIN_SRC sh
+sudo apt install build-essential cmake libwayland-dev libxkbcommon-dev xorg-dev
+#+END_SRC
+
+** Linux (Fedora)
+#+BEGIN_SRC sh
+sudo dnf install gcc-c++ cmake wayland-devel libxkbcommon-devel libX11-devel libXrandr-devel libXinerama-devel libXcursor-devel libXi-devel
+#+END_SRC
+
+** macOS / Windows
+No additional dependencies required.
+
+* Build
+#+BEGIN_SRC sh
+cmake -Bbuild && cmake --build build
+#+END_SRC
+
+* Run
+#+BEGIN_SRC sh
+./build/main
+#+END_SRC
